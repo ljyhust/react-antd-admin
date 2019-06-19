@@ -1,7 +1,7 @@
 /**
  * 程序的入口, 类似java中的main
  */
-
+// import无{}表示 引用之后 as 个别名，　有{} 表示引用某个变量或属性并可以改写 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux'
@@ -39,6 +39,9 @@ const routes = (
           <Route path="option3" tableName="testAction" getComponent={DBTableContainer}/>
         </Route>
 
+        <Route path="community">
+          <Route path="homePost" tableName="homePost" getComponent={DBTableContainer}></Route>
+        </Route>
         <Route path="daohang">
           <Route path="555" component={Hello}/>
           <Route path="sanji">

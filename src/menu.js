@@ -13,8 +13,8 @@
 // 定义siderbar菜单
 const sidebarMenu = [
   {
-    key: 'index',  // route时url中的值
-    name: '菜单哈哈哈',  // 在菜单中显示的名称
+    key: 'index',  // route时即index.js 中url中的值
+    name: '表格模拟',  // 在菜单中显示的名称
     icon: 'smile',  // 图标是可选的
     child: [
       {
@@ -35,9 +35,16 @@ const sidebarMenu = [
     ],
   },
   {
-    key: 'alone',
-    name: '我没有子菜单',
-    icon: 'clock-circle',
+    key: 'community',
+    name: '社区',
+    icon: 'team',
+    child: [
+      {
+        key: 'homePost',
+        name: '首页帖子',
+        icon: 'bank',
+      },
+    ],
   },
   {
     key: 'alone2',
